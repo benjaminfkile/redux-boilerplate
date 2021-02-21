@@ -24,7 +24,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.math)
     return (
       <div className="App">
         <Counter add={this.props.add} subtract={this.props.subtract} value={this.props.math.result} />
