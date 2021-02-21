@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './App.css';
 import { User } from './User';
 import { Counter } from './Counter'
 import { connect } from 'react-redux';
@@ -28,7 +27,6 @@ class App extends Component {
     console.log(this.props.math)
     return (
       <div className="App">
-        <br></br>
         <Counter add={this.props.add} subtract={this.props.subtract} value={this.props.math.result} />
         <br></br>
         <User username={this.props.user.name} age={this.props.user.age} changeUsername={() => this.props.setName(this.generateName())} />

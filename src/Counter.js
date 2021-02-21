@@ -11,5 +11,4 @@ export class Counter extends Component {
             </div>
         )
     }
-
 }
