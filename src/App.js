@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <Counter add={this.props.add} subtract={this.props.subtract} value={this.props.math.result} />
         <br></br>
-        <User username={this.props.user.name} age={this.props.user.age} changeUsername={() => this.props.setName(this.generateName())} />
+        <User username={this.props.user.name} changeUsername={() => this.props.setName(this.generateName())} />
       </div>
     )
   }
