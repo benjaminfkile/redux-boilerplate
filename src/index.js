@@ -6,7 +6,7 @@ import logger from 'redux-logger'
 import { Provider } from 'react-redux'
 
 const mathReducer = (state = {
-  result: 1,
+  result: 0,
   lastValues: []
 }, action) => {
   switch (action.type) {
@@ -76,5 +76,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-

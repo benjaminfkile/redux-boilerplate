@@ -10,7 +10,7 @@ class App extends Component {
     super()
   }
 
-  capFirst = (string) => {
+  upcase = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   generateName = () => {   
-    var name = this.capFirst(name1[this.getRandomInt(0, name1.length + 1)]) + ' ' + this.capFirst(name2[this.getRandomInt(0, name2.length + 1)]);
+    var name = this.upcase(name1[this.getRandomInt(0, name1.length + 1)]) + ' ' + this.upcase(name2[this.getRandomInt(0, name2.length + 1)]);
     return name;
   }
 
